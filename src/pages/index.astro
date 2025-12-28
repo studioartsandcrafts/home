@@ -14,7 +14,7 @@ function getFirstLink(links: { [key: string]: string }) {
 
 function sortByType(
   a: CollectionEntry<"members">,
-  b: CollectionEntry<"members">
+  b: CollectionEntry<"members">,
 ) {
   if (a.data.core < b.data.core) return 1;
   if (a.data.core > b.data.core) return -1;
@@ -31,7 +31,7 @@ function sortByType(
             class="lg:hidden"
           />©
         </h1>
-        <p>a cross-disciplinary collective</p>
+        <p>an arts and crafts studio</p>
         <FunnyCaptions />
       </div>
       <div class="info">
@@ -56,14 +56,14 @@ function sortByType(
           {
             memberEntries.map((member, index) => (
               <>
-                <a
+                {/* <a
                   href={getFirstLink(member.data.links)}
                   target="_blank"
                   referrerpolicy="no-referrer"
                   class="whitespace-nowrap link"
-                >
-                  {member.data.name}
-                </a>
+                > */}
+                {member.data.name}
+                {/* </a> */}
                 {index < memberEntries.length - 1 ? " / " : ""}
               </>
             ))

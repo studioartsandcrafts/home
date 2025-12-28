@@ -11,18 +11,18 @@
     "Designing your past, present, and future",
     "Look towards the sunrise, ephemeral relaxation",
     "YESTERDAY DESIGN TOMORROW",
-    "MY QUIET LIFE AS A DESIGNER(btw designer) IN ANOTHER WORLD",
+    // "MY QUIET LIFE AS A DESIGNER (btw designer) IN ANOTHER WORLD",
     "DESIGN PERFECT BEING UNDER FREEDOM",
     "A DESIGN PLAYGROUND",
     "THE EVERLASTING FLAME, CRADLE THE EARTH",
     "I LOVE CARLY RAE JEPSON",
-    "NATURE’S BOUNTY: LIVE FAST DIE YOUNG",
+    // "NATURE’S BOUNTY: LIVE FAST DIE YOUNG",
     "S(LOGAN)",
     "SHOUTOUT BRAZIL",
     "NATURE CALLS, TOWARDS YOU",
     "chili’s baby back ribs",
     "IM REALLY HUNGRY BUY ME FOOD",
-    "EAT PANT",
+    // "EAT PANT",
     "AMBIGUITY IS ETERNAL FREEDOM",
     "GRANULATED OPTIC WIZARDS",
     "EMBRACE ME IM LONELY",
@@ -36,11 +36,11 @@
     "KNIFEE",
     "Richard Owens’ arms length boots ($2000 no low balling)",
     "Impenetrable space, innumerable thoughts",
-    "apostles of the earth;",
+    // "apostles of the earth;",
   ];
   const shuffledCaptionList = shuffleArray(captionList);
   const captionElement = document.getElementById(
-    "funny-caption"
+    "funny-caption",
   ) as HTMLParagraphElement;
 
   let timeout;
@@ -62,7 +62,7 @@
     });
     const newActive = captionElement.childNodes[count] as HTMLSpanElement;
     newActive.classList.add("active");
-    timeout = setTimeout(tick, 1000);
+    timeout = setTimeout(tick, 2000);
   }, 1000);
 
   function shuffleArray(array: string[]) {
